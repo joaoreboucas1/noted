@@ -1,6 +1,6 @@
 # Noted
 
-**NOTE:** This app is under development! Make anny suggestions and commplaints in our [GitHub Issues](https://github.com/joaoreboucas1/notes/issues).
+**NOTE:** This app is under development! Make anny suggestions and commplaints in our [GitHub Issues](https://github.com/joaoreboucas1/noted/issues).
 
 A terminal app for managing some notes.
 

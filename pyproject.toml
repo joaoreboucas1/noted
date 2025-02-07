@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "noted"
-version = "0.0.1"
+version = "0.0.2"
 authors = [
   { name="João Rebouças", email="joao.reboucas1@gmail.com" },
 ]
@@ -19,8 +19,8 @@ license = "MIT"
 license-files = ["LICEN[CS]E*"]
 
 [project.urls]
-Homepage = "https://github.com/joaoreboucas1/todo"
-Issues = "https://github.com/joaoreboucas1/todo/issues"
+Homepage = "https://github.com/joaoreboucas1/noted"
+Issues = "https://github.com/joaoreboucas1/noted/issues"
 
 [tool.hatch.build.targets.wheel]
 packages = ["noted"]
