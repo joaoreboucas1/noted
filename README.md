@@ -9,7 +9,7 @@ A terminal app for managing some notes.
 The installation is as simple as
 
 ```
-$ pip install -i https://test.pypi.org/simple/ noted
+$ pip install noted-app
 ```
 
 ## Usage
