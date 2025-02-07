@@ -5,6 +5,7 @@ from typing import Optional
 @dataclass
 class Config:
     filename: str
+    repo_path: str
     editor: str
     origin: Optional[str] = None
 
@@ -16,7 +17,7 @@ class Config:
 
     def from_file(filename: str):
         if not os.path.exists(filename): raise Exception(f"ERROR: tried to import Config from file {filename} which could not be found")
-        c: Config = Config(filename="", editor="")
+        c: Config = Config(filename="", editor="", repo_path="")
         with open(filename, "r") as f: lines = f.read().splitlines()
         for line in lines:
             stmt: list[str] = line.strip().split("=")
