@@ -1,0 +1,26 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "noted"
+version = "0.0.1"
+authors = [
+  { name="João Rebouças", email="joao.reboucas1@gmail.com" },
+]
+description = "A simple terminal app that manages your notes."
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: Unix",
+]
+license = "MIT"
+license-files = ["LICEN[CS]E*"]
+
+[project.urls]
+Homepage = "https://github.com/joaoreboucas1/todo"
+Issues = "https://github.com/joaoreboucas1/todo/issues"
+
+[tool.hatch.build.targets.wheel]
+packages = ["noted"]

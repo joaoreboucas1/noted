@@ -20,8 +20,8 @@ class Config:
         with open(filename, "r") as f: lines = f.read().splitlines()
         for line in lines:
             stmt: list[str] = line.strip().split("=")
-            if len(stmt) != 2: raise Exception(f"ERROR: in Config file '{filename}'\nCould not parse field '{line}'")
+            if len(stmt) != 2: raise Exception(f"ERROR: in Config file '{filename}': Could not parse field '{line}'")
             field, value = stmt
-            if field not in Config.__dataclass_fields__.keys(): raise Exception(f"ERROR: in Config file '{filename}'\nInvalid config '{field}'")
+            if field not in Config.__dataclass_fields__.keys(): raise Exception(f"ERROR: in Config file '{filename}': Invalid config '{field}'")
             setattr(c, field, value.strip())
         return c
