@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "noted_app"
-version = "0.0.3"
+version = "0.1.0"
 authors = [
   { name="João Rebouças", email="joao.reboucas1@gmail.com" },
 ]
@@ -17,6 +17,9 @@ classifiers = [
 ]
 license = "MIT"
 license-files = ["LICEN[CS]E*"]
+
+[project.scripts]
+noted = "noted:main"
 
 [project.urls]
 Homepage = "https://github.com/joaoreboucas1/noted"

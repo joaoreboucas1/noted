@@ -4,7 +4,7 @@ import subprocess
 from .config import Config
 
 # Setup phase that creates the git repo and the .todorc file
-def setup(config):
+def setup(config: Config) -> None:
     cwd = os.getcwd()
 
     if not os.path.isdir(config.repo_path): os.mkdir(config.repo_path)
@@ -18,8 +18,7 @@ def setup(config):
         if "origin" not in proc.stdout: subprocess.run(["git", "remote", "add", "origin", f"{config.origin}"])
         subprocess.run(["git", "pull", "origin", "main"])
 
-    subprocess.run(["touch", f"{config.filename}"])
+    for f in config.files.values():
+        subprocess.run(["touch", f"{f}"])
 
     os.chdir(cwd)
-
-    return config
